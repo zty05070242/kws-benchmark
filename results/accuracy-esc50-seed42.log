@@ -1,0 +1,121 @@
+torch=2.8.0 Namespace(model='all', background='esc50', epochs=15, batch_size=64, seed=42, threads=4, device='mps', smoke=False)
+tc train 36923 {0: 3228, 1: 3130, 2: 2948, 3: 3134, 4: 3037, 5: 3019, 6: 3086, 7: 2970, 8: 3111, 9: 3106, 10: 3077, 11: 3077}
+tc validation 4443 {0: 397, 1: 406, 2: 350, 3: 377, 4: 352, 5: 363, 6: 363, 7: 373, 8: 350, 9: 372, 10: 370, 11: 370}
+tc epoch=1 validation_accuracy=0.874634
+tc epoch=2 validation_accuracy=0.912447
+tc epoch=3 validation_accuracy=0.917848
+tc epoch=4 validation_accuracy=0.914697
+tc epoch=5 validation_accuracy=0.927977
+tc epoch=6 validation_accuracy=0.936079
+tc epoch=7 validation_accuracy=0.937430
+tc epoch=8 validation_accuracy=0.935854
+tc epoch=9 validation_accuracy=0.935629
+tc epoch=10 validation_accuracy=0.937880
+tc epoch=11 validation_accuracy=0.937430
+tc epoch=12 validation_accuracy=0.938780
+tc epoch=13 validation_accuracy=0.942381
+tc epoch=14 validation_accuracy=0.941481
+tc epoch=15 validation_accuracy=0.940581
+tc held_out_test_accuracy=0.948262
+tc yes: 408/419
+tc no: 372/405
+tc up: 400/425
+tc down: 377/406
+tc left: 398/412
+tc right: 375/396
+tc on: 368/396
+tc off: 382/402
+tc stop: 400/411
+tc go: 383/402
+tc _unknown_: 366/408
+tc _silence_: 408/408
+bc train 36923 {0: 3228, 1: 3130, 2: 2948, 3: 3134, 4: 3037, 5: 3019, 6: 3086, 7: 2970, 8: 3111, 9: 3106, 10: 3077, 11: 3077}
+bc validation 4443 {0: 397, 1: 406, 2: 350, 3: 377, 4: 352, 5: 363, 6: 363, 7: 373, 8: 350, 9: 372, 10: 370, 11: 370}
+bc epoch=1 validation_accuracy=0.744767
+bc epoch=2 validation_accuracy=0.843124
+bc epoch=3 validation_accuracy=0.882962
+bc epoch=4 validation_accuracy=0.899167
+bc epoch=5 validation_accuracy=0.902093
+bc epoch=6 validation_accuracy=0.916498
+bc epoch=7 validation_accuracy=0.918974
+bc epoch=8 validation_accuracy=0.923250
+bc epoch=9 validation_accuracy=0.928652
+bc epoch=10 validation_accuracy=0.927752
+bc epoch=11 validation_accuracy=0.931578
+bc epoch=12 validation_accuracy=0.932028
+bc epoch=13 validation_accuracy=0.932928
+bc epoch=14 validation_accuracy=0.930903
+bc epoch=15 validation_accuracy=0.931803
+bc held_out_test_accuracy=0.935583
+bc yes: 408/419
+bc no: 383/405
+bc up: 403/425
+bc down: 362/406
+bc left: 386/412
+bc right: 378/396
+bc on: 368/396
+bc off: 383/402
+bc stop: 404/411
+bc go: 367/402
+bc _unknown_: 325/408
+bc _silence_: 408/408
+ds train 36923 {0: 3228, 1: 3130, 2: 2948, 3: 3134, 4: 3037, 5: 3019, 6: 3086, 7: 2970, 8: 3111, 9: 3106, 10: 3077, 11: 3077}
+ds validation 4443 {0: 397, 1: 406, 2: 350, 3: 377, 4: 352, 5: 363, 6: 363, 7: 373, 8: 350, 9: 372, 10: 370, 11: 370}
+ds epoch=1 validation_accuracy=0.870808
+ds epoch=2 validation_accuracy=0.908395
+ds epoch=3 validation_accuracy=0.915372
+ds epoch=4 validation_accuracy=0.911321
+ds epoch=5 validation_accuracy=0.919874
+ds epoch=6 validation_accuracy=0.925051
+ds epoch=7 validation_accuracy=0.920324
+ds epoch=8 validation_accuracy=0.925051
+ds epoch=9 validation_accuracy=0.923025
+ds epoch=10 validation_accuracy=0.922125
+ds epoch=11 validation_accuracy=0.924150
+ds epoch=12 validation_accuracy=0.922125
+ds epoch=13 validation_accuracy=0.922125
+ds epoch=14 validation_accuracy=0.921224
+ds epoch=15 validation_accuracy=0.921900
+ds held_out_test_accuracy=0.932106
+ds yes: 408/419
+ds no: 370/405
+ds up: 377/425
+ds down: 373/406
+ds left: 397/412
+ds right: 384/396
+ds on: 365/396
+ds off: 377/402
+ds stop: 402/411
+ds go: 357/402
+ds _unknown_: 340/408
+ds _silence_: 408/408
+matchbox train 36923 {0: 3228, 1: 3130, 2: 2948, 3: 3134, 4: 3037, 5: 3019, 6: 3086, 7: 2970, 8: 3111, 9: 3106, 10: 3077, 11: 3077}
+matchbox validation 4443 {0: 397, 1: 406, 2: 350, 3: 377, 4: 352, 5: 363, 6: 363, 7: 373, 8: 350, 9: 372, 10: 370, 11: 370}
+matchbox epoch=1 validation_accuracy=0.891965
+matchbox epoch=2 validation_accuracy=0.907495
+matchbox epoch=3 validation_accuracy=0.917398
+matchbox epoch=4 validation_accuracy=0.926626
+matchbox epoch=5 validation_accuracy=0.922125
+matchbox epoch=6 validation_accuracy=0.939905
+matchbox epoch=7 validation_accuracy=0.938555
+matchbox epoch=8 validation_accuracy=0.940131
+matchbox epoch=9 validation_accuracy=0.939455
+matchbox epoch=10 validation_accuracy=0.943957
+matchbox epoch=11 validation_accuracy=0.942381
+matchbox epoch=12 validation_accuracy=0.944407
+matchbox epoch=13 validation_accuracy=0.944632
+matchbox epoch=14 validation_accuracy=0.947333
+matchbox epoch=15 validation_accuracy=0.944857
+matchbox held_out_test_accuracy=0.953579
+matchbox yes: 411/419
+matchbox no: 390/405
+matchbox up: 398/425
+matchbox down: 377/406
+matchbox left: 393/412
+matchbox right: 379/396
+matchbox on: 377/396
+matchbox off: 381/402
+matchbox stop: 404/411
+matchbox go: 378/402
+matchbox _unknown_: 367/408
+matchbox _silence_: 408/408

@@ -1,0 +1,96 @@
+{
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "torch": "2.8.0",
+  "threads": 1,
+  "precision": "float32",
+  "esc50_checkpoint_seed": 42,
+  "input": "first official v2 test clip",
+  "results": {
+    "TC-ResNet8 (PyTorch port)": {
+      "input_shape": [
+        1,
+        40,
+        98
+      ],
+      "parameters": 65168,
+      "parameter_bytes": 260672,
+      "conv_and_linear_macs": 1522560,
+      "median_model_ms": 0.196262582,
+      "mean_ms_per_trial": [
+        0.203074,
+        0.196243332,
+        0.196073168,
+        0.195751,
+        0.1950455,
+        0.197035668,
+        0.196281832,
+        0.1965835
+      ]
+    },
+    "BC-ResNet-1 (released code)": {
+      "input_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "parameters": 9232,
+      "parameter_bytes": 36928,
+      "conv_and_linear_macs": 2482156,
+      "median_model_ms": 1.486707252,
+      "mean_ms_per_trial": [
+        1.586132,
+        1.4919415,
+        1.4962238319999999,
+        1.481787,
+        1.486962668,
+        1.4864518359999999,
+        1.483602668,
+        1.485782832
+      ]
+    },
+    "DS-CNN-S (PyTorch port)": {
+      "input_shape": [
+        1,
+        1,
+        49,
+        10
+      ],
+      "parameters": 23756,
+      "parameter_bytes": 95024,
+      "conv_and_linear_macs": 2656768,
+      "median_model_ms": 0.242203416,
+      "mean_ms_per_trial": [
+        0.246235332,
+        0.243320332,
+        0.242187832,
+        0.24211016800000001,
+        0.242984168,
+        0.242219,
+        0.2417725,
+        0.241894
+      ]
+    },
+    "MatchboxNet-3x2x64 (PyTorch port)": {
+      "input_shape": [
+        1,
+        64,
+        128
+      ],
+      "parameters": 90444,
+      "parameter_bytes": 361776,
+      "conv_and_linear_macs": 11134464,
+      "median_model_ms": 1.421211166,
+      "mean_ms_per_trial": [
+        1.4397541680000001,
+        1.4311773319999999,
+        1.406417668,
+        1.40857,
+        1.428780168,
+        1.413642164,
+        1.413092832,
+        1.429885168
+      ]
+    }
+  }
+}
