@@ -43,6 +43,23 @@ python benchmark.py --extensions --esc50-seed 42 > runs/benchmark.json
 
 Each accuracy log ends each model's run with its test accuracy and per-class counts. The benchmark loads the four seed-42 checkpoints and the first official test clip's precomputed features. It reports the median of eight block-average inference times for each model. The training logs and timing JSON underlying the paper are in [`results/`](results).
 
+## Reproduce the latency profiling
+
+After training the seed-42 models above, run:
+
+```sh
+python profile_latency.py > runs/latency-profile.json
+python profile_latency.py --backend-check > runs/latency-backends.json
+```
+
+The first command profiles the original models, times the BC-ResNet-1 filter
+rewrite at one and four threads, and checks the predicted classes on all 4,890
+test clips. The second records which convolution backends PyTorch selected and
+repeats the four-thread timing. The recorded runs from the M3 Pro are in
+[`latency-profile.json`](results/latency-profile.json) and
+[`latency-backends.json`](results/latency-backends.json). Backend selection
+and latency can differ on other hardware or PyTorch versions.
+
 ## Model sources
 
 - TC-ResNet8 is a PyTorch port of the [Hyperconnect TensorFlow classifier](https://github.com/hyperconnect/TC-ResNet/tree/8ccbff3a45590247d8c54cc82129acb90eecf5c8). The port implements the classifier head and omits the auxiliary range head.

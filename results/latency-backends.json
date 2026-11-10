@@ -1,0 +1,4709 @@
+{
+  "dispatch": {
+    "bc": {
+      "cnn_head.0": {
+        "input_shape": [
+          1,
+          1,
+          40,
+          101
+        ],
+        "kernel": [
+          5,
+          5
+        ],
+        "groups": 1,
+        "stride": [
+          2,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.0.0.f2.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          20,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.0.0.f2.1.block.0": {
+        "input_shape": [
+          1,
+          8,
+          20,
+          101
+        ],
+        "kernel": [
+          3,
+          1
+        ],
+        "groups": 8,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.0.0.f1.0.block.0": {
+        "input_shape": [
+          1,
+          8,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 8,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.0.0.f1.1": {
+        "input_shape": [
+          1,
+          8,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.0.1.f2.0.block.0": {
+        "input_shape": [
+          1,
+          8,
+          20,
+          101
+        ],
+        "kernel": [
+          3,
+          1
+        ],
+        "groups": 8,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.0.1.f1.0.block.0": {
+        "input_shape": [
+          1,
+          8,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 8,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.0.1.f1.1": {
+        "input_shape": [
+          1,
+          8,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.1.0.f2.0.block.0": {
+        "input_shape": [
+          1,
+          8,
+          20,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.1.0.f2.1.block.0": {
+        "input_shape": [
+          1,
+          12,
+          20,
+          101
+        ],
+        "kernel": [
+          3,
+          1
+        ],
+        "groups": 12,
+        "stride": [
+          2,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.1.0.f1.0.block.0": {
+        "input_shape": [
+          1,
+          12,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 12,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          2
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.1.0.f1.1": {
+        "input_shape": [
+          1,
+          12,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.1.1.f2.0.block.0": {
+        "input_shape": [
+          1,
+          12,
+          10,
+          101
+        ],
+        "kernel": [
+          3,
+          1
+        ],
+        "groups": 12,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.1.1.f1.0.block.0": {
+        "input_shape": [
+          1,
+          12,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 12,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          2
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.1.1.f1.1": {
+        "input_shape": [
+          1,
+          12,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.2.0.f2.0.block.0": {
+        "input_shape": [
+          1,
+          12,
+          10,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.2.0.f2.1.block.0": {
+        "input_shape": [
+          1,
+          16,
+          10,
+          101
+        ],
+        "kernel": [
+          3,
+          1
+        ],
+        "groups": 16,
+        "stride": [
+          2,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.2.0.f1.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 16,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          4
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.2.0.f1.1": {
+        "input_shape": [
+          1,
+          16,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.2.1.f2.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          5,
+          101
+        ],
+        "kernel": [
+          3,
+          1
+        ],
+        "groups": 16,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.2.1.f1.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 16,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          4
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.2.1.f1.1": {
+        "input_shape": [
+          1,
+          16,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.2.2.f2.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          5,
+          101
+        ],
+        "kernel": [
+          3,
+          1
+        ],
+        "groups": 16,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.2.2.f1.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 16,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          4
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.2.2.f1.1": {
+        "input_shape": [
+          1,
+          16,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.2.3.f2.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          5,
+          101
+        ],
+        "kernel": [
+          3,
+          1
+        ],
+        "groups": 16,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.2.3.f1.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 16,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          4
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.2.3.f1.1": {
+        "input_shape": [
+          1,
+          16,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.3.0.f2.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          5,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.3.0.f2.1.block.0": {
+        "input_shape": [
+          1,
+          20,
+          5,
+          101
+        ],
+        "kernel": [
+          3,
+          1
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.3.0.f1.0.block.0": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          8
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.3.0.f1.1": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.3.1.f2.0.block.0": {
+        "input_shape": [
+          1,
+          20,
+          5,
+          101
+        ],
+        "kernel": [
+          3,
+          1
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.3.1.f1.0.block.0": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          8
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.3.1.f1.1": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.3.2.f2.0.block.0": {
+        "input_shape": [
+          1,
+          20,
+          5,
+          101
+        ],
+        "kernel": [
+          3,
+          1
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.3.2.f1.0.block.0": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          8
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.3.2.f1.1": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.3.3.f2.0.block.0": {
+        "input_shape": [
+          1,
+          20,
+          5,
+          101
+        ],
+        "kernel": [
+          3,
+          1
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.3.3.f1.0.block.0": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          8
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.3.3.f1.1": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "classifier.0": {
+        "input_shape": [
+          1,
+          20,
+          5,
+          101
+        ],
+        "kernel": [
+          5,
+          5
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "classifier.1": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "classifier.5": {
+        "input_shape": [
+          1,
+          32,
+          1,
+          1
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      }
+    },
+    "ds": {
+      "1": {
+        "input_shape": [
+          1,
+          1,
+          58,
+          12
+        ],
+        "kernel": [
+          10,
+          4
+        ],
+        "groups": 1,
+        "stride": [
+          2,
+          2
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "4": {
+        "input_shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "kernel": [
+          3,
+          3
+        ],
+        "groups": 64,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Winograd3x3Depthwise"
+      },
+      "7": {
+        "input_shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "10": {
+        "input_shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "kernel": [
+          3,
+          3
+        ],
+        "groups": 64,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Winograd3x3Depthwise"
+      },
+      "13": {
+        "input_shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "16": {
+        "input_shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "kernel": [
+          3,
+          3
+        ],
+        "groups": 64,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Winograd3x3Depthwise"
+      },
+      "19": {
+        "input_shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "22": {
+        "input_shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "kernel": [
+          3,
+          3
+        ],
+        "groups": 64,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Winograd3x3Depthwise"
+      },
+      "25": {
+        "input_shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      }
+    },
+    "bc_embedded": {
+      "cnn_head.0": {
+        "input_shape": [
+          1,
+          1,
+          40,
+          101
+        ],
+        "kernel": [
+          5,
+          5
+        ],
+        "groups": 1,
+        "stride": [
+          2,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.0.0.f2.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          20,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.0.0.f2.1.block.0": {
+        "input_shape": [
+          1,
+          8,
+          20,
+          101
+        ],
+        "kernel": [
+          3,
+          3
+        ],
+        "groups": 8,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Winograd3x3Depthwise"
+      },
+      "BCBlocks.0.0.f1.0.block.0": {
+        "input_shape": [
+          1,
+          8,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 8,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.0.0.f1.1": {
+        "input_shape": [
+          1,
+          8,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.0.1.f2.0.block.0": {
+        "input_shape": [
+          1,
+          8,
+          20,
+          101
+        ],
+        "kernel": [
+          3,
+          3
+        ],
+        "groups": 8,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Winograd3x3Depthwise"
+      },
+      "BCBlocks.0.1.f1.0.block.0": {
+        "input_shape": [
+          1,
+          8,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 8,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.0.1.f1.1": {
+        "input_shape": [
+          1,
+          8,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.1.0.f2.0.block.0": {
+        "input_shape": [
+          1,
+          8,
+          20,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.1.0.f2.1.block.0": {
+        "input_shape": [
+          1,
+          12,
+          20,
+          101
+        ],
+        "kernel": [
+          3,
+          1
+        ],
+        "groups": 12,
+        "stride": [
+          2,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.1.0.f1.0.block.0": {
+        "input_shape": [
+          1,
+          12,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 12,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          2
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.1.0.f1.1": {
+        "input_shape": [
+          1,
+          12,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.1.1.f2.0.block.0": {
+        "input_shape": [
+          1,
+          12,
+          10,
+          101
+        ],
+        "kernel": [
+          3,
+          3
+        ],
+        "groups": 12,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Winograd3x3Depthwise"
+      },
+      "BCBlocks.1.1.f1.0.block.0": {
+        "input_shape": [
+          1,
+          12,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 12,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          2
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.1.1.f1.1": {
+        "input_shape": [
+          1,
+          12,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.2.0.f2.0.block.0": {
+        "input_shape": [
+          1,
+          12,
+          10,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.2.0.f2.1.block.0": {
+        "input_shape": [
+          1,
+          16,
+          10,
+          101
+        ],
+        "kernel": [
+          3,
+          1
+        ],
+        "groups": 16,
+        "stride": [
+          2,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.2.0.f1.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 16,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          4
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.2.0.f1.1": {
+        "input_shape": [
+          1,
+          16,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.2.1.f2.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          5,
+          101
+        ],
+        "kernel": [
+          3,
+          3
+        ],
+        "groups": 16,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Winograd3x3Depthwise"
+      },
+      "BCBlocks.2.1.f1.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 16,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          4
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.2.1.f1.1": {
+        "input_shape": [
+          1,
+          16,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.2.2.f2.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          5,
+          101
+        ],
+        "kernel": [
+          3,
+          3
+        ],
+        "groups": 16,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Winograd3x3Depthwise"
+      },
+      "BCBlocks.2.2.f1.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 16,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          4
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.2.2.f1.1": {
+        "input_shape": [
+          1,
+          16,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.2.3.f2.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          5,
+          101
+        ],
+        "kernel": [
+          3,
+          3
+        ],
+        "groups": 16,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Winograd3x3Depthwise"
+      },
+      "BCBlocks.2.3.f1.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 16,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          4
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.2.3.f1.1": {
+        "input_shape": [
+          1,
+          16,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.3.0.f2.0.block.0": {
+        "input_shape": [
+          1,
+          16,
+          5,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.3.0.f2.1.block.0": {
+        "input_shape": [
+          1,
+          20,
+          5,
+          101
+        ],
+        "kernel": [
+          3,
+          3
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Winograd3x3Depthwise"
+      },
+      "BCBlocks.3.0.f1.0.block.0": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          8
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.3.0.f1.1": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.3.1.f2.0.block.0": {
+        "input_shape": [
+          1,
+          20,
+          5,
+          101
+        ],
+        "kernel": [
+          3,
+          3
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Winograd3x3Depthwise"
+      },
+      "BCBlocks.3.1.f1.0.block.0": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          8
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.3.1.f1.1": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.3.2.f2.0.block.0": {
+        "input_shape": [
+          1,
+          20,
+          5,
+          101
+        ],
+        "kernel": [
+          3,
+          3
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Winograd3x3Depthwise"
+      },
+      "BCBlocks.3.2.f1.0.block.0": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          8
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.3.2.f1.1": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "BCBlocks.3.3.f2.0.block.0": {
+        "input_shape": [
+          1,
+          20,
+          5,
+          101
+        ],
+        "kernel": [
+          3,
+          3
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Winograd3x3Depthwise"
+      },
+      "BCBlocks.3.3.f1.0.block.0": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          8
+        ],
+        "backend": "SlowDilated2d"
+      },
+      "BCBlocks.3.3.f1.1": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "classifier.0": {
+        "input_shape": [
+          1,
+          20,
+          5,
+          101
+        ],
+        "kernel": [
+          5,
+          5
+        ],
+        "groups": 20,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "classifier.1": {
+        "input_shape": [
+          1,
+          20,
+          1,
+          101
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      },
+      "classifier.5": {
+        "input_shape": [
+          1,
+          32,
+          1,
+          1
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "stride": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "backend": "Slow2d"
+      }
+    }
+  },
+  "optimized_operators": {
+    "bc": [
+      "aten::Int.Tensor",
+      "aten::_add_relu.Tensor",
+      "aten::adaptive_avg_pool2d",
+      "aten::add.Tensor",
+      "aten::batch_norm",
+      "aten::floor_divide",
+      "aten::mul.Tensor",
+      "aten::relu_",
+      "aten::silu_",
+      "aten::size.int",
+      "aten::view",
+      "prepacked::conv2d_clamp_run"
+    ],
+    "ds": [
+      "aten::adaptive_avg_pool2d",
+      "aten::batch_norm",
+      "aten::flatten.using_ints",
+      "aten::pad",
+      "prepacked::conv2d_clamp_run",
+      "prepacked::linear_clamp_run"
+    ]
+  },
+  "batch_one": {
+    "bc": {
+      "median_ms": 1.400155834,
+      "block_means_ms": [
+        1.394667168,
+        1.394692,
+        1.406522332,
+        1.3958645,
+        1.4044471680000001,
+        1.4141151680000001,
+        1.421470668,
+        1.3948085
+      ]
+    },
+    "ds": {
+      "median_ms": 0.241375584,
+      "block_means_ms": [
+        0.2409945,
+        0.2414095,
+        0.243916,
+        0.242023,
+        0.240378664,
+        0.241817332,
+        0.241341668,
+        0.240392836
+      ]
+    },
+    "bc_embedded": {
+      "median_ms": 1.347682,
+      "block_means_ms": [
+        1.336629164,
+        1.348298332,
+        1.3628971680000002,
+        1.408291168,
+        1.3470656680000002,
+        1.3615993359999998,
+        1.3286955,
+        1.3449895
+      ]
+    },
+    "bc_optimized": {
+      "median_ms": 0.601037998,
+      "block_means_ms": [
+        0.6022058320000001,
+        0.586024332,
+        0.5871205,
+        0.607781,
+        0.606428668,
+        0.599870164,
+        0.595302832,
+        0.60575
+      ]
+    },
+    "bc_rewritten": {
+      "median_ms": 1.057810334,
+      "block_means_ms": [
+        1.054729668,
+        1.0450495,
+        1.053225332,
+        1.046813836,
+        1.0627355,
+        1.074722832,
+        1.068076832,
+        1.060891
+      ]
+    },
+    "ds_optimized": {
+      "median_ms": 0.159924418,
+      "block_means_ms": [
+        0.164358168,
+        0.1645555,
+        0.1570045,
+        0.164495836,
+        0.157598664,
+        0.16117,
+        0.156083836,
+        0.15867883600000002
+      ]
+    },
+    "ds_rewritten": {
+      "median_ms": 0.17894825,
+      "block_means_ms": [
+        0.17241066800000002,
+        0.1724075,
+        0.179786332,
+        0.17738583600000002,
+        0.1787805,
+        0.179116,
+        0.1799105,
+        0.179579
+      ]
+    }
+  },
+  "rewritten_operators_without_prepacking": {
+    "bc": [
+      "aten::Int.Tensor",
+      "aten::_add_relu.Tensor",
+      "aten::adaptive_avg_pool2d",
+      "aten::add.Tensor",
+      "aten::batch_norm",
+      "aten::conv2d",
+      "aten::floor_divide",
+      "aten::mul.Tensor",
+      "aten::relu_",
+      "aten::silu_",
+      "aten::size.int",
+      "aten::view"
+    ],
+    "ds": [
+      "aten::adaptive_avg_pool2d",
+      "aten::batch_norm",
+      "aten::conv2d",
+      "aten::flatten.using_ints",
+      "aten::linear",
+      "aten::pad",
+      "aten::relu"
+    ]
+  },
+  "larger_batch_dispatch": {
+    "8": {
+      "bc": {
+        "cnn_head.0": {
+          "input_shape": [
+            8,
+            1,
+            40,
+            101
+          ],
+          "kernel": [
+            5,
+            5
+          ],
+          "groups": 1,
+          "stride": [
+            2,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.0.0.f2.0.block.0": {
+          "input_shape": [
+            8,
+            16,
+            20,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.0.0.f2.1.block.0": {
+          "input_shape": [
+            8,
+            8,
+            20,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 8,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.0.0.f1.0.block.0": {
+          "input_shape": [
+            8,
+            8,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 8,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.0.0.f1.1": {
+          "input_shape": [
+            8,
+            8,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.0.1.f2.0.block.0": {
+          "input_shape": [
+            8,
+            8,
+            20,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 8,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.0.1.f1.0.block.0": {
+          "input_shape": [
+            8,
+            8,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 8,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.0.1.f1.1": {
+          "input_shape": [
+            8,
+            8,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.1.0.f2.0.block.0": {
+          "input_shape": [
+            8,
+            8,
+            20,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.1.0.f2.1.block.0": {
+          "input_shape": [
+            8,
+            12,
+            20,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 12,
+          "stride": [
+            2,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.1.0.f1.0.block.0": {
+          "input_shape": [
+            8,
+            12,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 12,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            2
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.1.0.f1.1": {
+          "input_shape": [
+            8,
+            12,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.1.1.f2.0.block.0": {
+          "input_shape": [
+            8,
+            12,
+            10,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 12,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.1.1.f1.0.block.0": {
+          "input_shape": [
+            8,
+            12,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 12,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            2
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.1.1.f1.1": {
+          "input_shape": [
+            8,
+            12,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.2.0.f2.0.block.0": {
+          "input_shape": [
+            8,
+            12,
+            10,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.2.0.f2.1.block.0": {
+          "input_shape": [
+            8,
+            16,
+            10,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 16,
+          "stride": [
+            2,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.2.0.f1.0.block.0": {
+          "input_shape": [
+            8,
+            16,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 16,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            4
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.2.0.f1.1": {
+          "input_shape": [
+            8,
+            16,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.2.1.f2.0.block.0": {
+          "input_shape": [
+            8,
+            16,
+            5,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 16,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.2.1.f1.0.block.0": {
+          "input_shape": [
+            8,
+            16,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 16,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            4
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.2.1.f1.1": {
+          "input_shape": [
+            8,
+            16,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.2.2.f2.0.block.0": {
+          "input_shape": [
+            8,
+            16,
+            5,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 16,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.2.2.f1.0.block.0": {
+          "input_shape": [
+            8,
+            16,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 16,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            4
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.2.2.f1.1": {
+          "input_shape": [
+            8,
+            16,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.2.3.f2.0.block.0": {
+          "input_shape": [
+            8,
+            16,
+            5,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 16,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.2.3.f1.0.block.0": {
+          "input_shape": [
+            8,
+            16,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 16,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            4
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.2.3.f1.1": {
+          "input_shape": [
+            8,
+            16,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.3.0.f2.0.block.0": {
+          "input_shape": [
+            8,
+            16,
+            5,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.3.0.f2.1.block.0": {
+          "input_shape": [
+            8,
+            20,
+            5,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.3.0.f1.0.block.0": {
+          "input_shape": [
+            8,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            8
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.3.0.f1.1": {
+          "input_shape": [
+            8,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.3.1.f2.0.block.0": {
+          "input_shape": [
+            8,
+            20,
+            5,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.3.1.f1.0.block.0": {
+          "input_shape": [
+            8,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            8
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.3.1.f1.1": {
+          "input_shape": [
+            8,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.3.2.f2.0.block.0": {
+          "input_shape": [
+            8,
+            20,
+            5,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.3.2.f1.0.block.0": {
+          "input_shape": [
+            8,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            8
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.3.2.f1.1": {
+          "input_shape": [
+            8,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.3.3.f2.0.block.0": {
+          "input_shape": [
+            8,
+            20,
+            5,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "BCBlocks.3.3.f1.0.block.0": {
+          "input_shape": [
+            8,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            8
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.3.3.f1.1": {
+          "input_shape": [
+            8,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "classifier.0": {
+          "input_shape": [
+            8,
+            20,
+            5,
+            101
+          ],
+          "kernel": [
+            5,
+            5
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "classifier.1": {
+          "input_shape": [
+            8,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "classifier.5": {
+          "input_shape": [
+            8,
+            32,
+            1,
+            1
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        }
+      },
+      "ds": {
+        "1": {
+          "input_shape": [
+            8,
+            1,
+            58,
+            12
+          ],
+          "kernel": [
+            10,
+            4
+          ],
+          "groups": 1,
+          "stride": [
+            2,
+            2
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "4": {
+          "input_shape": [
+            8,
+            64,
+            25,
+            5
+          ],
+          "kernel": [
+            3,
+            3
+          ],
+          "groups": 64,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Winograd3x3Depthwise"
+        },
+        "7": {
+          "input_shape": [
+            8,
+            64,
+            25,
+            5
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "10": {
+          "input_shape": [
+            8,
+            64,
+            25,
+            5
+          ],
+          "kernel": [
+            3,
+            3
+          ],
+          "groups": 64,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Winograd3x3Depthwise"
+        },
+        "13": {
+          "input_shape": [
+            8,
+            64,
+            25,
+            5
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "16": {
+          "input_shape": [
+            8,
+            64,
+            25,
+            5
+          ],
+          "kernel": [
+            3,
+            3
+          ],
+          "groups": 64,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Winograd3x3Depthwise"
+        },
+        "19": {
+          "input_shape": [
+            8,
+            64,
+            25,
+            5
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        },
+        "22": {
+          "input_shape": [
+            8,
+            64,
+            25,
+            5
+          ],
+          "kernel": [
+            3,
+            3
+          ],
+          "groups": 64,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Winograd3x3Depthwise"
+        },
+        "25": {
+          "input_shape": [
+            8,
+            64,
+            25,
+            5
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Slow2d"
+        }
+      }
+    },
+    "32": {
+      "bc": {
+        "cnn_head.0": {
+          "input_shape": [
+            32,
+            1,
+            40,
+            101
+          ],
+          "kernel": [
+            5,
+            5
+          ],
+          "groups": 1,
+          "stride": [
+            2,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.0.0.f2.0.block.0": {
+          "input_shape": [
+            32,
+            16,
+            20,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.0.0.f2.1.block.0": {
+          "input_shape": [
+            32,
+            8,
+            20,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 8,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.0.0.f1.0.block.0": {
+          "input_shape": [
+            32,
+            8,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 8,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.0.0.f1.1": {
+          "input_shape": [
+            32,
+            8,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.0.1.f2.0.block.0": {
+          "input_shape": [
+            32,
+            8,
+            20,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 8,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.0.1.f1.0.block.0": {
+          "input_shape": [
+            32,
+            8,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 8,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.0.1.f1.1": {
+          "input_shape": [
+            32,
+            8,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.1.0.f2.0.block.0": {
+          "input_shape": [
+            32,
+            8,
+            20,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.1.0.f2.1.block.0": {
+          "input_shape": [
+            32,
+            12,
+            20,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 12,
+          "stride": [
+            2,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.1.0.f1.0.block.0": {
+          "input_shape": [
+            32,
+            12,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 12,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            2
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.1.0.f1.1": {
+          "input_shape": [
+            32,
+            12,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.1.1.f2.0.block.0": {
+          "input_shape": [
+            32,
+            12,
+            10,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 12,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.1.1.f1.0.block.0": {
+          "input_shape": [
+            32,
+            12,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 12,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            2
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.1.1.f1.1": {
+          "input_shape": [
+            32,
+            12,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.2.0.f2.0.block.0": {
+          "input_shape": [
+            32,
+            12,
+            10,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.2.0.f2.1.block.0": {
+          "input_shape": [
+            32,
+            16,
+            10,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 16,
+          "stride": [
+            2,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.2.0.f1.0.block.0": {
+          "input_shape": [
+            32,
+            16,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 16,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            4
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.2.0.f1.1": {
+          "input_shape": [
+            32,
+            16,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.2.1.f2.0.block.0": {
+          "input_shape": [
+            32,
+            16,
+            5,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 16,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.2.1.f1.0.block.0": {
+          "input_shape": [
+            32,
+            16,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 16,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            4
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.2.1.f1.1": {
+          "input_shape": [
+            32,
+            16,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.2.2.f2.0.block.0": {
+          "input_shape": [
+            32,
+            16,
+            5,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 16,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.2.2.f1.0.block.0": {
+          "input_shape": [
+            32,
+            16,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 16,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            4
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.2.2.f1.1": {
+          "input_shape": [
+            32,
+            16,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.2.3.f2.0.block.0": {
+          "input_shape": [
+            32,
+            16,
+            5,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 16,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.2.3.f1.0.block.0": {
+          "input_shape": [
+            32,
+            16,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 16,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            4
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.2.3.f1.1": {
+          "input_shape": [
+            32,
+            16,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.3.0.f2.0.block.0": {
+          "input_shape": [
+            32,
+            16,
+            5,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.3.0.f2.1.block.0": {
+          "input_shape": [
+            32,
+            20,
+            5,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.3.0.f1.0.block.0": {
+          "input_shape": [
+            32,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            8
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.3.0.f1.1": {
+          "input_shape": [
+            32,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.3.1.f2.0.block.0": {
+          "input_shape": [
+            32,
+            20,
+            5,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.3.1.f1.0.block.0": {
+          "input_shape": [
+            32,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            8
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.3.1.f1.1": {
+          "input_shape": [
+            32,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.3.2.f2.0.block.0": {
+          "input_shape": [
+            32,
+            20,
+            5,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.3.2.f1.0.block.0": {
+          "input_shape": [
+            32,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            8
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.3.2.f1.1": {
+          "input_shape": [
+            32,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.3.3.f2.0.block.0": {
+          "input_shape": [
+            32,
+            20,
+            5,
+            101
+          ],
+          "kernel": [
+            3,
+            1
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "BCBlocks.3.3.f1.0.block.0": {
+          "input_shape": [
+            32,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            3
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            8
+          ],
+          "backend": "SlowDilated2d"
+        },
+        "BCBlocks.3.3.f1.1": {
+          "input_shape": [
+            32,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "classifier.0": {
+          "input_shape": [
+            32,
+            20,
+            5,
+            101
+          ],
+          "kernel": [
+            5,
+            5
+          ],
+          "groups": 20,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "classifier.1": {
+          "input_shape": [
+            32,
+            20,
+            1,
+            101
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "classifier.5": {
+          "input_shape": [
+            32,
+            32,
+            1,
+            1
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        }
+      },
+      "ds": {
+        "1": {
+          "input_shape": [
+            32,
+            1,
+            58,
+            12
+          ],
+          "kernel": [
+            10,
+            4
+          ],
+          "groups": 1,
+          "stride": [
+            2,
+            2
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "4": {
+          "input_shape": [
+            32,
+            64,
+            25,
+            5
+          ],
+          "kernel": [
+            3,
+            3
+          ],
+          "groups": 64,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Winograd3x3Depthwise"
+        },
+        "7": {
+          "input_shape": [
+            32,
+            64,
+            25,
+            5
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "10": {
+          "input_shape": [
+            32,
+            64,
+            25,
+            5
+          ],
+          "kernel": [
+            3,
+            3
+          ],
+          "groups": 64,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Winograd3x3Depthwise"
+        },
+        "13": {
+          "input_shape": [
+            32,
+            64,
+            25,
+            5
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "16": {
+          "input_shape": [
+            32,
+            64,
+            25,
+            5
+          ],
+          "kernel": [
+            3,
+            3
+          ],
+          "groups": 64,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Winograd3x3Depthwise"
+        },
+        "19": {
+          "input_shape": [
+            32,
+            64,
+            25,
+            5
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        },
+        "22": {
+          "input_shape": [
+            32,
+            64,
+            25,
+            5
+          ],
+          "kernel": [
+            3,
+            3
+          ],
+          "groups": 64,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "Winograd3x3Depthwise"
+        },
+        "25": {
+          "input_shape": [
+            32,
+            64,
+            25,
+            5
+          ],
+          "kernel": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "stride": [
+            1,
+            1
+          ],
+          "dilation": [
+            1,
+            1
+          ],
+          "backend": "NnpackSpatial"
+        }
+      }
+    }
+  },
+  "counted_macs": {
+    "bc": 2482156,
+    "ds": 2656768,
+    "bc_embedded": 3136636
+  },
+  "mobile_optimizer_disabled_passes": [
+    "CONV_BN_FUSION"
+  ],
+  "logit_validation": {
+    "bc": {
+      "clips": 4890,
+      "reference_correct": 4575,
+      "max_logit_difference": {
+        "embedded": 1.52587890625e-05,
+        "optimized": 1.430511474609375e-05,
+        "rewritten": 0.0
+      },
+      "different_predicted_classes": {
+        "embedded": 0,
+        "optimized": 0,
+        "rewritten": 0
+      }
+    },
+    "ds": {
+      "clips": 4890,
+      "reference_correct": 4558,
+      "max_logit_difference": {
+        "optimized": 1.1444091796875e-05,
+        "rewritten": 0.0
+      },
+      "different_predicted_classes": {
+        "optimized": 0,
+        "rewritten": 0
+      }
+    }
+  },
+  "four_threads_repeat": {
+    "bc": {
+      "median_ms": 6.090329375,
+      "block_means_ms": [
+        6.0871375,
+        6.13144333,
+        6.21212459,
+        6.05005458,
+        6.06991792,
+        6.04638041,
+        6.09352125,
+        6.18912208
+      ]
+    },
+    "ds": {
+      "median_ms": 0.3507925,
+      "block_means_ms": [
+        0.35457,
+        0.34820291,
+        0.35136125,
+        0.34729375,
+        0.34827416,
+        0.35022375,
+        0.358705,
+        0.35155
+      ]
+    },
+    "bc_both": {
+      "median_ms": 1.8182745800000002,
+      "block_means_ms": [
+        1.81551,
+        1.8085220800000001,
+        1.83411375,
+        1.81841333,
+        1.81624042,
+        1.8181358300000001,
+        1.85609625,
+        1.8357258300000001
+      ]
+    }
+  }
+}

@@ -1,0 +1,793 @@
+{
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "torch": "2.8.0",
+  "baseline_and_interventions": {
+    "bc": {
+      "median_ms": 1.394415832,
+      "block_means_ms": [
+        1.642691832,
+        1.3837881680000002,
+        1.393913,
+        1.3944765,
+        1.401342,
+        1.392024336,
+        1.410118664,
+        1.394355164
+      ]
+    },
+    "ds": {
+      "median_ms": 0.24064241800000002,
+      "block_means_ms": [
+        0.24071616399999998,
+        0.239413,
+        0.240795336,
+        0.239372,
+        0.239978832,
+        0.240654836,
+        0.241288668,
+        0.24063
+      ]
+    },
+    "bc_frequency": {
+      "median_ms": 1.256296666,
+      "block_means_ms": [
+        1.2621711640000002,
+        1.252740664,
+        1.2437153319999998,
+        1.260997,
+        1.2454225,
+        1.264958164,
+        1.2574945,
+        1.2550988319999998
+      ]
+    },
+    "bc_temporal": {
+      "median_ms": 1.139521502,
+      "block_means_ms": [
+        1.178221,
+        1.1389448359999998,
+        1.1245471640000002,
+        1.142775332,
+        1.127004,
+        1.140098168,
+        1.1492513359999998,
+        1.133635664
+      ]
+    },
+    "bc_both": {
+      "median_ms": 1.017726416,
+      "block_means_ms": [
+        1.074573,
+        1.014004664,
+        1.027789664,
+        1.027561,
+        1.021448168,
+        0.998883836,
+        1.0059725,
+        1.010985168
+      ]
+    }
+  },
+  "cpu_profiles": {
+    "bc": {
+      "conv_cpu_fraction": 0.8406515604609469,
+      "fallback_calls_by_kernel_per_pass": {
+        "5x5": 21.0,
+        "1x1": 18.0,
+        "3x1": 184.0,
+        "1x3": 184.0
+      },
+      "fallback_calls_by_operator_per_pass": {
+        "aten::_slow_conv2d_forward": 239.0,
+        "aten::slow_conv_dilated2d": 168.0
+      },
+      "operators": {
+        "aten::conv2d": {
+          "calls_per_pass": 44.0,
+          "self_us_per_pass": 25.852733333332836
+        },
+        "aten::convolution": {
+          "calls_per_pass": 44.0,
+          "self_us_per_pass": 27.85803333333272
+        },
+        "aten::_convolution": {
+          "calls_per_pass": 44.0,
+          "self_us_per_pass": 353.32693333334936
+        },
+        "aten::_nnpack_available": {
+          "calls_per_pass": 34.0,
+          "self_us_per_pass": 1.404099999999256
+        },
+        "aten::thnn_conv2d": {
+          "calls_per_pass": 239.0,
+          "self_us_per_pass": 94.00853333333725
+        },
+        "aten::_slow_conv2d_forward": {
+          "calls_per_pass": 239.0,
+          "self_us_per_pass": 387.23810000000856
+        },
+        "aten::empty": {
+          "calls_per_pass": 988.0,
+          "self_us_per_pass": 141.55223333331867
+        },
+        "aten::view": {
+          "calls_per_pass": 283.0,
+          "self_us_per_pass": 33.53943333332284
+        },
+        "aten::resize_": {
+          "calls_per_pass": 419.0,
+          "self_us_per_pass": 49.561733333323296
+        },
+        "aten::batch_norm": {
+          "calls_per_pass": 30.0,
+          "self_us_per_pass": 14.60753333333179
+        },
+        "aten::_batch_norm_impl_index": {
+          "calls_per_pass": 30.0,
+          "self_us_per_pass": 22.246766666670712
+        },
+        "aten::native_batch_norm": {
+          "calls_per_pass": 30.0,
+          "self_us_per_pass": 116.62326666666779
+        },
+        "aten::empty_like": {
+          "calls_per_pass": 30.0,
+          "self_us_per_pass": 10.049499999994639
+        },
+        "aten::relu_": {
+          "calls_per_pass": 18.0,
+          "self_us_per_pass": 5.784199999996404
+        },
+        "aten::clamp_min_": {
+          "calls_per_pass": 18.0,
+          "self_us_per_pass": 25.603433333336447
+        },
+        "aten::detach": {
+          "calls_per_pass": 18.0,
+          "self_us_per_pass": 2.1986999999997523
+        },
+        "aten::narrow": {
+          "calls_per_pass": 776.0,
+          "self_us_per_pass": 200.96523333334258
+        },
+        "aten::slice": {
+          "calls_per_pass": 776.0,
+          "self_us_per_pass": 269.9539999999577
+        },
+        "aten::as_strided": {
+          "calls_per_pass": 1112.0,
+          "self_us_per_pass": 103.53623333336934
+        },
+        "aten::cat": {
+          "calls_per_pass": 25.0,
+          "self_us_per_pass": 37.31663333333675
+        },
+        "aten::adaptive_avg_pool2d": {
+          "calls_per_pass": 13.0,
+          "self_us_per_pass": 4.636299999997197
+        },
+        "aten::_adaptive_avg_pool2d": {
+          "calls_per_pass": 12.0,
+          "self_us_per_pass": 73.57736666667031
+        },
+        "aten::silu_": {
+          "calls_per_pass": 12.0,
+          "self_us_per_pass": 19.602633333332438
+        },
+        "aten::feature_dropout": {
+          "calls_per_pass": 12.0,
+          "self_us_per_pass": 0.8953999999996787
+        },
+        "aten::add": {
+          "calls_per_pass": 20.0,
+          "self_us_per_pass": 64.30680000000062
+        },
+        "aten::slow_conv_dilated2d": {
+          "calls_per_pass": 168.0,
+          "self_us_per_pass": 295.130166666678
+        },
+        "aten::zero_": {
+          "calls_per_pass": 168.0,
+          "self_us_per_pass": 5.36036666666923
+        },
+        "aten::select": {
+          "calls_per_pass": 336.0,
+          "self_us_per_pass": 133.79446666665183
+        },
+        "aten::mean": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 1.5611333333332975
+        },
+        "aten::sum": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 1.8221999999997025
+        },
+        "aten::fill_": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 0.5903000000001157
+        },
+        "aten::div_": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 2.420666666666693
+        },
+        "aten::to": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 0.5001333333332847
+        },
+        "aten::_to_copy": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 1.2624666666671147
+        },
+        "aten::empty_strided": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 0.4235999999999573
+        },
+        "aten::copy_": {
+          "calls_per_pass": 2.0,
+          "self_us_per_pass": 1.6609333333325746
+        },
+        "aten::reshape": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 0.7318666666663224
+        }
+      }
+    },
+    "ds": {
+      "conv_cpu_fraction": 0.5656683720378892,
+      "fallback_calls_by_kernel_per_pass": {
+        "10x4": 1.0,
+        "1x1": 4.0
+      },
+      "fallback_calls_by_operator_per_pass": {
+        "aten::_slow_conv2d_forward": 5.0
+      },
+      "operators": {
+        "aten::pad": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 0.48606666666637466
+        },
+        "aten::constant_pad_nd": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 1.7903333333336788
+        },
+        "aten::empty": {
+          "calls_per_pass": 65.0,
+          "self_us_per_pass": 10.677766666666345
+        },
+        "aten::fill_": {
+          "calls_per_pass": 2.0,
+          "self_us_per_pass": 0.8444666666666322
+        },
+        "aten::narrow": {
+          "calls_per_pass": 4.0,
+          "self_us_per_pass": 1.3886666666663572
+        },
+        "aten::slice": {
+          "calls_per_pass": 4.0,
+          "self_us_per_pass": 1.5722000000003054
+        },
+        "aten::as_strided": {
+          "calls_per_pass": 6.0,
+          "self_us_per_pass": 0.9876333333330701
+        },
+        "aten::copy_": {
+          "calls_per_pass": 8.0,
+          "self_us_per_pass": 8.297166666666612
+        },
+        "aten::conv2d": {
+          "calls_per_pass": 9.0,
+          "self_us_per_pass": 6.171133333333387
+        },
+        "aten::convolution": {
+          "calls_per_pass": 9.0,
+          "self_us_per_pass": 5.9137333333334645
+        },
+        "aten::_convolution": {
+          "calls_per_pass": 9.0,
+          "self_us_per_pass": 96.30903333333308
+        },
+        "aten::_nnpack_available": {
+          "calls_per_pass": 5.0,
+          "self_us_per_pass": 0.25406666666687555
+        },
+        "aten::thnn_conv2d": {
+          "calls_per_pass": 5.0,
+          "self_us_per_pass": 2.4598000000000355
+        },
+        "aten::_slow_conv2d_forward": {
+          "calls_per_pass": 5.0,
+          "self_us_per_pass": 27.1646999999997
+        },
+        "aten::view": {
+          "calls_per_pass": 15.0,
+          "self_us_per_pass": 1.876166666666621
+        },
+        "aten::resize_": {
+          "calls_per_pass": 5.0,
+          "self_us_per_pass": 0.9753666666666722
+        },
+        "aten::reshape": {
+          "calls_per_pass": 5.0,
+          "self_us_per_pass": 1.5422000000007008
+        },
+        "aten::relu": {
+          "calls_per_pass": 9.0,
+          "self_us_per_pass": 2.1594333333331757
+        },
+        "aten::clamp_min": {
+          "calls_per_pass": 9.0,
+          "self_us_per_pass": 11.997366666666647
+        },
+        "aten::batch_norm": {
+          "calls_per_pass": 9.0,
+          "self_us_per_pass": 4.438866666666663
+        },
+        "aten::_batch_norm_impl_index": {
+          "calls_per_pass": 9.0,
+          "self_us_per_pass": 6.647400000000545
+        },
+        "aten::native_batch_norm": {
+          "calls_per_pass": 9.0,
+          "self_us_per_pass": 31.347333333332326
+        },
+        "aten::empty_like": {
+          "calls_per_pass": 9.0,
+          "self_us_per_pass": 2.9986000000006015
+        },
+        "aten::detach": {
+          "calls_per_pass": 4.0,
+          "self_us_per_pass": 0.5209333333333196
+        },
+        "aten::adaptive_avg_pool2d": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 0.523666666666649
+        },
+        "aten::mean": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 1.1097333333333192
+        },
+        "aten::sum": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 1.6082000000000334
+        },
+        "aten::div_": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 1.7583666666666582
+        },
+        "aten::to": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 0.384766666666701
+        },
+        "aten::_to_copy": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 0.8498999999998773
+        },
+        "aten::empty_strided": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 0.27636666666665327
+        },
+        "aten::flatten": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 0.5525666666665946
+        },
+        "aten::linear": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 0.7097666666666556
+        },
+        "aten::t": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 0.30966666666665027
+        },
+        "aten::transpose": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 0.5820333333333868
+        },
+        "aten::addmm": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 29.580399999999706
+        },
+        "aten::expand": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 0.5345333333335324
+        },
+        "aten::resolve_conj": {
+          "calls_per_pass": 2.0,
+          "self_us_per_pass": 0.10280000000012326
+        }
+      }
+    },
+    "bc_both": {
+      "conv_cpu_fraction": 0.2503984030687556,
+      "fallback_calls_by_kernel_per_pass": {
+        "5x5": 21.0,
+        "1x1": 18.0
+      },
+      "fallback_calls_by_operator_per_pass": {
+        "aten::_slow_conv2d_forward": 39.0
+      },
+      "operators": {
+        "aten::conv2d": {
+          "calls_per_pass": 20.0,
+          "self_us_per_pass": 11.878733333332672
+        },
+        "aten::convolution": {
+          "calls_per_pass": 20.0,
+          "self_us_per_pass": 12.039033333332197
+        },
+        "aten::_convolution": {
+          "calls_per_pass": 20.0,
+          "self_us_per_pass": 37.59986666666574
+        },
+        "aten::_nnpack_available": {
+          "calls_per_pass": 20.0,
+          "self_us_per_pass": 0.9302666666663844
+        },
+        "aten::thnn_conv2d": {
+          "calls_per_pass": 39.0,
+          "self_us_per_pass": 16.583366666669967
+        },
+        "aten::_slow_conv2d_forward": {
+          "calls_per_pass": 39.0,
+          "self_us_per_pass": 95.47493333333355
+        },
+        "aten::empty": {
+          "calls_per_pass": 276.0,
+          "self_us_per_pass": 44.68096666666368
+        },
+        "aten::view": {
+          "calls_per_pass": 83.0,
+          "self_us_per_pass": 12.073199999997684
+        },
+        "aten::resize_": {
+          "calls_per_pass": 51.0,
+          "self_us_per_pass": 9.646466666665699
+        },
+        "aten::batch_norm": {
+          "calls_per_pass": 30.0,
+          "self_us_per_pass": 14.906600000000788
+        },
+        "aten::_batch_norm_impl_index": {
+          "calls_per_pass": 30.0,
+          "self_us_per_pass": 21.60483333333262
+        },
+        "aten::native_batch_norm": {
+          "calls_per_pass": 30.0,
+          "self_us_per_pass": 100.55873333332791
+        },
+        "aten::empty_like": {
+          "calls_per_pass": 30.0,
+          "self_us_per_pass": 9.86446666667381
+        },
+        "aten::relu_": {
+          "calls_per_pass": 18.0,
+          "self_us_per_pass": 5.384866666667132
+        },
+        "aten::clamp_min_": {
+          "calls_per_pass": 18.0,
+          "self_us_per_pass": 25.516166666665942
+        },
+        "aten::detach": {
+          "calls_per_pass": 18.0,
+          "self_us_per_pass": 2.2515666666649747
+        },
+        "aten::pad": {
+          "calls_per_pass": 24.0,
+          "self_us_per_pass": 8.703033333332575
+        },
+        "aten::constant_pad_nd": {
+          "calls_per_pass": 24.0,
+          "self_us_per_pass": 31.368533333335453
+        },
+        "aten::fill_": {
+          "calls_per_pass": 25.0,
+          "self_us_per_pass": 20.084033333334485
+        },
+        "aten::narrow": {
+          "calls_per_pass": 88.0,
+          "self_us_per_pass": 27.425666666667233
+        },
+        "aten::slice": {
+          "calls_per_pass": 88.0,
+          "self_us_per_pass": 34.36750000000025
+        },
+        "aten::as_strided": {
+          "calls_per_pass": 184.0,
+          "self_us_per_pass": 26.59950000000193
+        },
+        "aten::copy_": {
+          "calls_per_pass": 26.0,
+          "self_us_per_pass": 37.7425666666661
+        },
+        "aten::unfold": {
+          "calls_per_pass": 24.0,
+          "self_us_per_pass": 13.027766666665297
+        },
+        "aten::select": {
+          "calls_per_pass": 72.0,
+          "self_us_per_pass": 37.13770000000009
+        },
+        "aten::mul": {
+          "calls_per_pass": 24.0,
+          "self_us_per_pass": 31.773399999999146
+        },
+        "aten::addcmul": {
+          "calls_per_pass": 48.0,
+          "self_us_per_pass": 72.45433333333162
+        },
+        "aten::adaptive_avg_pool2d": {
+          "calls_per_pass": 13.0,
+          "self_us_per_pass": 4.987566666669803
+        },
+        "aten::_adaptive_avg_pool2d": {
+          "calls_per_pass": 12.0,
+          "self_us_per_pass": 75.29063333333467
+        },
+        "aten::silu_": {
+          "calls_per_pass": 12.0,
+          "self_us_per_pass": 20.108533333331298
+        },
+        "aten::feature_dropout": {
+          "calls_per_pass": 12.0,
+          "self_us_per_pass": 0.9623666666666585
+        },
+        "aten::add": {
+          "calls_per_pass": 20.0,
+          "self_us_per_pass": 47.59996666666866
+        },
+        "aten::cat": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 1.616599999999668
+        },
+        "aten::mean": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 1.5263333333332942
+        },
+        "aten::sum": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 1.5526666666664823
+        },
+        "aten::div_": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 2.265099999999461
+        },
+        "aten::to": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 0.4444666666667293
+        },
+        "aten::_to_copy": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 1.0056333333338594
+        },
+        "aten::empty_strided": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 0.3943666666665422
+        },
+        "aten::reshape": {
+          "calls_per_pass": 1.0,
+          "self_us_per_pass": 0.532133333333915
+        }
+      }
+    }
+  },
+  "thread_and_batch_sweep": {
+    "threads_1_batch_8": {
+      "bc": {
+        "median_ms": 4.766833955,
+        "block_means_ms": [
+          4.91227042,
+          5.01211833,
+          5.032835,
+          4.74880416,
+          4.78486375,
+          4.71016583,
+          4.74745167,
+          4.74712333
+        ]
+      },
+      "ds": {
+        "median_ms": 1.002970835,
+        "block_means_ms": [
+          1.00235875,
+          1.0367570799999999,
+          1.01637208,
+          0.99062833,
+          0.99831958,
+          0.9963591700000001,
+          1.00580084,
+          1.00358292
+        ]
+      },
+      "bc_both": {
+        "median_ms": 3.173804375,
+        "block_means_ms": [
+          3.34142666,
+          3.39393958,
+          3.18274625,
+          3.13736875,
+          3.10650708,
+          3.13366625,
+          3.1648625,
+          3.18800375
+        ]
+      }
+    },
+    "threads_1_batch_32": {
+      "bc": {
+        "median_ms": 41.983475,
+        "block_means_ms": [
+          42.13150292,
+          41.79565083,
+          41.869165409999994,
+          41.94952042,
+          41.952738329999995,
+          42.14775416,
+          42.07227208,
+          42.01421167
+        ]
+      },
+      "ds": {
+        "median_ms": 15.42855771,
+        "block_means_ms": [
+          15.41194666,
+          15.89798459,
+          15.40469584,
+          15.64537792,
+          15.42508875,
+          15.432026669999999,
+          15.26502542,
+          15.54008291
+        ]
+      },
+      "bc_both": {
+        "median_ms": 28.03083771,
+        "block_means_ms": [
+          27.87670542,
+          27.80790625,
+          29.24384792,
+          28.928399170000002,
+          27.93019,
+          28.16320125,
+          28.033445420000003,
+          28.02823
+        ]
+      }
+    },
+    "threads_4_batch_1": {
+      "bc": {
+        "median_ms": 6.191581455,
+        "block_means_ms": [
+          6.87838958,
+          6.2257833300000005,
+          6.1130729100000005,
+          6.25698542,
+          6.15737958,
+          6.09730167,
+          6.07130125,
+          6.40406
+        ]
+      },
+      "ds": {
+        "median_ms": 0.349439585,
+        "block_means_ms": [
+          0.35369375,
+          0.34977041999999997,
+          0.34983875,
+          0.3516275,
+          0.34910875,
+          0.34706167,
+          0.34523417,
+          0.34682459000000004
+        ]
+      },
+      "bc_both": {
+        "median_ms": 1.82515,
+        "block_means_ms": [
+          1.85900875,
+          1.84391417,
+          1.8248033300000002,
+          1.86061042,
+          1.82549667,
+          1.81137125,
+          1.82304917,
+          1.81751959
+        ]
+      }
+    },
+    "threads_4_batch_8": {
+      "bc": {
+        "median_ms": 23.791866665,
+        "block_means_ms": [
+          23.706157079999997,
+          23.706460420000003,
+          24.14880166,
+          24.64911834,
+          23.74581,
+          23.773267079999997,
+          23.81046625,
+          23.85822833
+        ]
+      },
+      "ds": {
+        "median_ms": 0.85915417,
+        "block_means_ms": [
+          0.85518459,
+          0.8617429200000001,
+          0.8812291600000001,
+          0.8753775,
+          0.85656542,
+          0.86677333,
+          0.85396875,
+          0.8531504200000001
+        ]
+      },
+      "bc_both": {
+        "median_ms": 4.61080896,
+        "block_means_ms": [
+          4.59113333,
+          4.67140833,
+          4.83389291,
+          4.79637125,
+          4.59108166,
+          4.61259833,
+          4.60662458,
+          4.60901959
+        ]
+      }
+    },
+    "threads_4_batch_32": {
+      "bc": {
+        "median_ms": 94.20563396,
+        "block_means_ms": [
+          94.64699917,
+          94.22983584,
+          93.88599084,
+          94.04659292,
+          93.78133625,
+          94.48331083,
+          94.18143208,
+          96.62291625
+        ]
+      },
+      "ds": {
+        "median_ms": 13.399225005,
+        "block_means_ms": [
+          13.85436833,
+          13.33959084,
+          13.26621,
+          13.86408458,
+          13.33454459,
+          13.7802175,
+          13.45885917,
+          13.18180583
+        ]
+      },
+      "bc_both": {
+        "median_ms": 25.120169795,
+        "block_means_ms": [
+          25.15523209,
+          24.94842958,
+          24.84107541,
+          26.444425829999997,
+          25.0851075,
+          26.94806625,
+          24.789982079999998,
+          25.59232167
+        ]
+      }
+    }
+  },
+  "logit_validation": {
+    "clips": 4890,
+    "reference_correct": 4575,
+    "max_logit_difference": {
+      "bc_frequency": 1.52587890625e-05,
+      "bc_temporal": 1.1444091796875e-05,
+      "bc_both": 1.52587890625e-05
+    },
+    "different_predicted_classes": {
+      "bc_frequency": 0,
+      "bc_temporal": 0,
+      "bc_both": 0
+    }
+  }
+}
